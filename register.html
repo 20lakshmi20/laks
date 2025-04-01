@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Register a course</title>
+        <style>
+            body {
+                background-color: rgb(184, 234, 255);
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #92c1f4;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #3961f1; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            COURSE REGISTRATION
+        </h1>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <lable for="name">Enter your name</lable><br>
+            <input type="text" name="name"><br><br>
+
+            <lable for="email">Enter your emailId</lable><br>
+            <input type="email" name="emailId"><br><br>
+            
+            <lable for="course">Choose a course</lable><br>
+            <select id="course" name="courseName">
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Python for ML">Python for ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+                <option value="AI">AI</option>
+            </select><br><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
